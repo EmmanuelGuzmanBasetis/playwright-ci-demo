@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><title>Demo Login</title></head>
+<body>
+  <h1>Demo Login Page</h1>
+  <form id="login-form">
+    <input id="username" placeholder="Username" />
+    <input id="password" type="password" placeholder="Password" />
+    <button id="login-button" type="submit">Login</button>
+    <p id="message"></p>
+  </form>
+  <script>
+    document.getElementById('login-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const u = document.getElementById('username').value;
+      const p = document.getElementById('password').value;
+      document.getElementById('message').textContent = (u === 'user' && p === 'pass') 
+        ? 'Login successful!' : 'Invalid credentials';
+    });
+  </script>
+</body>
+</html>

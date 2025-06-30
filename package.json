@@ -1,0 +1,14 @@
+{
+  "name": "playwright-ci-template",
+  "scripts": {
+    "test": "playwright test"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.52.0",
+    "http-server": "^14.1.1",
+    "@types/node": "^22.15.18",
+    "@typescript-eslint/eslint-plugin": "^8.33.0",
+    "@typescript-eslint/parser": "^8.33.0",
+    "eslint": "^9.27.0"
+  }
+}
