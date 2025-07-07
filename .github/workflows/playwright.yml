@@ -20,12 +20,6 @@ jobs:
       - name: Install Playwright browsers
         run: npx playwright install --with-deps
 
-      - name: Start HTTP server
-        run: |
-          npx http-server public -p 5500 &
-          sleep 3
-          curl -f http://localhost:5500 || (echo "Server failed to start" && exit 1)
-      
       - name: Run Playwright tests
         run: npx playwright test --grep @ci
 
