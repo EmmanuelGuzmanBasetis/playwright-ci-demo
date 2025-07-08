@@ -11,7 +11,7 @@ test.describe('Demo Login Tests', () => {
 
   test('@ci Successful login shows success message', async() => {
     await loginPage.login('user', 'pass')
-    await expect(loginPage.message).toHaveText('Login uccessful!')
+    await expect(loginPage.message).toHaveText('Login successful!')
   })
 
   test('Invalid login shows error message', async() => {
